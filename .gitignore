@@ -160,4 +160,4 @@ cython_debug/
 .idea/
 
 # Data
-0_data/fid_list_analysis.pickle
+data/fid_list_analysis.pickle
