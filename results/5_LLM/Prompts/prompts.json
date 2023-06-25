@@ -1,0 +1,62 @@
+[
+  {
+    "folder": "Closed ended set",
+    "prompts": [
+      {
+        "Name": "ClosedEnded_v.1",
+        "Description": null,
+        "Prompt": "A group of students were given the following task:\\n\\n{{task_description}}\\n\\nYou have to find and enumerate the non-functional requirements the students have found in the case, and order them by relevance. Remember each answer is within double double quotes. \\n\\nTo do your task, you should do the following:\\n1. Identify the non-functional requirements in the answers together with the most frequent explanations given.\\n2. Differentiate when the non-functional is said to appear in the case and when it is said to not appear..\\n3. Count the total amount of times each non-functional requirement is said to appear in the case.\\n4. List all of them, adding the amount of times each one has been identified.\\n\\nHere are the answers:\\n\\n{{answers}}\\n\\nFinally, remember the output format must be two lists, one for the most relevant appearing non-functional requirements and one for the most relevant non-appearing non-functional requirements. You must add for each argument, the number of times it appears in the answers. Sort them by amount of appearances."
+      },
+      {
+        "Name": "ClosedEnded_v.2",
+        "Description": null,
+        "Prompt": "A group of students were given the following task:\n\n{{task_description}}\n\nYou have to find and enumerate the non-functional requirements the students have found in the case, and order them by relevance. Remember each answer is within double double quotes.\n\nTo do your task, you should do the following:\n1. Identify the non-functional requirements in the answers together with the most frequent explanations given.\n2. Differentiate when the non-functional is said to appear in the case and when it is said to not appear..\n3. Count the total amount of times each non-functional requirement is said to appear in the case.\n4. List all of them, adding the amount of times each one has been identified.\n\nHere are the answers:\n\n{{answers}}\n\nFinally, remember the output format must be two lists, one for the most relevant appearing non-functional requirements and one for the most relevant non-appearing non-functional requirements. You must add for each argument, the number of times it appears in the answers and a brief justification/proof the students give rephrasing it to be of around 10 words. Sort them by amount of appearances."
+      },
+      {
+        "Name": "ClosedEnded_MA_v.1",
+        "Description": null,
+        "Prompt": "A group of students were given the following task:\n\n{{task_description}}\n\nIn the expected answer, the following non-functional requirements should appear:\n\n{{non_functional_requirements}}\n\nYou have to analyze the answers and provide how close each answer is to a model answer.  For that pourpose, use the list of non-functional requirements that can be found above.\nTo do your task, you should do the following: \n1. Identify the non-functional requirements in the answers together with the most frequent explanations given.\n2. Differentiate when the non-functional is said to appear in the case and when it is said to not appear..\n3. Attribute an score from 1 to 4 to each one of the answers. 1 to the answers that are very far away from a good answer and 4 to the answers that are virtually a perfect answer\n4. Count the ammount of answers you have with each one of the scores.\n\nHere are the answers:\n\n{{answers}}\n\nFinally, remember the output format must be a table with two columns. One with the scores from 1 to 4, and another one with the ammount of answers you have puntuated with that score. Take into account the sum of column 2 should be equal to the total number of answers."
+      },
+      {
+        "Name": "ClosedEnded_MA_v.2",
+        "Description": null,
+        "Prompt": "A group of students were given the following task:\n\n{{task_description}}\n\nIn the expected answer, the non-functional requirements that should appear are: \"{{non_functional_requirements}}\".\n\nYou have to analyze the answers and provide how close each answer is to a model answer.  For that pourpose, use the list of non-functional requirements that can be found above.\nTo do your task, you should do the following: \n1. Identify the non-functional requirements in the answers together with the most frequent explanations given.\n2. Differentiate when the non-functional is said to appear in the case and when it is said to not appear..\n3. Attribute an score from 1 to 4 to each one of the answers. 1 to the answers that are very far away from a good answer and 4 to the answers that are virtually a perfect answer\n4. Count the ammount of answers you have with each one of the scores.\n\nHere are the answers:\n\n{{answers}}\n\nFinally, remember the output format must be a table with two columns. One with the scores from 1 to 4, and another one with the ammount of answers you have puntuated with that score. Take into account the sum of column 2 should be equal to the total number of answers (10). Remember the correct non-functional requirements are {{non_functional_requirements}}"
+      },
+      {
+        "Name": "ClosedEnded_MA_v.3",
+        "Description": null,
+        "Prompt": "A group of students were given the following task:\n\n{{task_description}}\n\nIn the expected answer, the non-functional requirements that should appear are: \"{{non_functional_requirements}}\". A correct answer should mention these ones and no more.\n\nYou have to analyze the answers and provide how close each answer is to a model answer.  For that pourpose, use the list of non-functional requirements that can be found above.\nTo do your task, you should do the following: \n1. Identify the non-functional requirements in the answers together with the most frequent explanations given.\n2. Differentiate when the non-functional is said to appear in the case and when it is said to not appear..\n3. Attribute an score from 1 to 4 to each one of the answers. 1 to the answers that are very far away from a correct answer and 4 to the answers that are virtually a perfect answer\n4. Count the ammount of answers you have with each one of the scores.\n\nHere are the answers:\n\n{{answers}}\n\nFinally, remember the output format must be a table with two columns. One with the scores from 1 to 4, and another one with the ammount of answers you have puntuated with that score. Take into account the sum of column 2 should be equal to the total number of answers (10). Remember the correct non-functional requirements are {{non_functional_requirements}}. Add a breaf comment with why did you puntuated each answer with that score."
+      }
+    ]
+  },
+  {
+    "folder": "Open ended set",
+    "prompts": [
+      {
+        "Name": "OpenEnded_v.1",
+        "Description": null,
+        "Prompt": "A group of students were given the following task:\\n\\n{{task_description}}\\n\\nYou have to find and enumerate the arguments students give both in favour and against the use of technology in education. You must list them separately.\\n\\nTo do your task, you must do the following steps:\\n1. Identify the sections where students discuss the impact of new technologies in education.\\n2. For each argument, detect its polarity. Whether it is presented as a positive, or negative argument\\n3. Group and count the arguments that are similar.\\n4. List all of them, adding the ammount of times each one has been identified.\\n\\nHere are the answers:\\n\\n{{answers}}"
+      },
+      {
+        "Name": "OpenEnded_v.2",
+        "Description": null,
+        "Prompt": "A group of students were given the following task:\\n\\n{{task_description}}\\n\\nYou have to find and enumerate the arguments students give both in favour and against the use of technology in education. You must list them in separate lists of at most five arguments.\\n\\nTo do your task, you must do the following steps: \\n1. Identify the sections where students discuss the impact of new technologies in education.\\n2. For each argument, detect its polarity. Whether it is presented as a positive, or negative argument\\n3. Refrase, generalize and group the arguments that are similar.\\n4. List all of them, adding the ammount of times each one appears in the student answers.\\n5. Sort them by relevance an keep the five that better represent the set of answers.\\n\\nHere are the answers:\\n\\n{{answers}}"
+      },
+      {
+        "Name": "OpenEnded_v.3",
+        "Description": null,
+        "Prompt": "A group of students were given the following task:\\n\\n{{task_description}}\\n\\nYou have to find and enumerate the arguments students give both in favour and against the use of technology in education. You must list them in separate lists of at most eight arguments.\\n\\nTo do your task, you must do the following steps: \\n1. Identify the sections where students discuss the impact of new technologies in education.\\n2. For each argument, detect its polarity. Whether it is presented as a positive, or negative argument\\n3. Refrase, generalize and group the arguments that are similar.\\n4. List all of them, adding the ammount of times each one appears in the student answers.\\n5. Sort them by relevance an keep the five that better represent the set of answers.\\n\\nHere are the answers:\\n\\n{{answers}}\\n\\nFinally, remember the output format must be two lists, one for the eight most relevant positive arguments, sorted by relevance, and one for the eight most relevant negative arguments, also sorted by relevance."
+      },
+      {
+        "Name": "OpenEnded_v.4",
+        "Description": null,
+        "Prompt": "A group of students were given the following task:\\n\\n{{task_description}}\\n\\nYou have to find and enumerate the arguments students give both in favour and against the use of technology in education. You must list them in separate lists of at most eight arguments.\\n\\nTo do your task, you must do the following steps: \\n1. Identify the sections where students discuss the impact of new technologies in education.\\n2. For each argument, detect its polarity. Whether it is presented as a positive, or negative argument\\n3. Rephrase, generalize and group the arguments that are similar.\\n4. List all of them, adding the amount of times each one appears in the student answers.\\n5. Sort them by relevance and keep the five that better represent the set of answers.\\nHere are the answers:\\n\\n{{answers}}\\n\\nFinally, remember the output format must be two lists, one for the eight most relevant positive arguments and one for the eight most relevant negative arguments. You must add for each argument, the number of times it appears in the answers. Sort them by amount of appearances."
+      },
+      {
+        "Name": "OpenEnded_v.5",
+        "Description": null,
+        "Prompt": "\"A group of students were given the following task:\\n\\n{{task_description}}\\n\\nYou have to find and enumerate the arguments students give both in favour and against the use of technology in education. You must list them in separate lists of at most five arguments.\\n\\nTo do your task, you must do the following steps: \\n1. Identify the sections where students discuss the impact of new technologies in education.\\n2. For each argument, detect its polarity. Whether it is presented as a positive, or negative argument\\n3. Refrase, generalize and group the arguments that are similar.\\n4. List all of them, adding the ammount of times each one appears in the student answers.\\n5. Sort them by relevance an keep the five that better represent the set of answers.\\n6. Structure the output in such a way it can be parsed as a json string. The json MUST have the following format:\\n[{\\n\\t\\\"argument\\\": \\\"\\\",\\t\\\"polarity\\\": \\\"\\\",\\t\\\"appearances\\\": \\\"\\\"}]\\n\\nHere are the answers:\\n\\n{{answers}}\\n\\nFinally, remember the output format must be a list of two json lists, one for the five most relevant positive arguments and one for the five most relevant negative arguments. You must add for each argument, the number of times it appears in the answers. Sort them by ammount of appearances and add the polarity of the argument (positive, negative). I must be able to directly parse your response as a json string.\""
+      }
+    ]
+  }
+]
